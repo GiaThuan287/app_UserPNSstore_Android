@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_conner_16dp"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp">
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp"
+            >
+            <ImageView
+                android:id="@+id/imgViewHDCT"
+                android:background="#F6F6F6"
+                android:layout_width="120dp"
+                android:layout_height="115dp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên:"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+                <TextView
+                    android:text=""
+                    android:layout_marginLeft="10dp"
+                    android:textSize="24dp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvTenHDCT"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Số lượng:"/>
+
+                <TextView
+                    android:id="@+id/tvSoluongHDCT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="" />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Giá:"/>
+
+                    <TextView
+                        android:id="@+id/tvGiaHDCT"
+                        android:layout_width="0dp"
+                        android:layout_weight="8"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="20dp"
+                        android:layout_marginTop="4dp"
+                        android:textStyle="italic"
+                        android:textColor="#40BFFF"
+                        />
+
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/txtdanhgia"
+                android:layout_width="wrap_content"
+                android:textSize="14dp"
+                android:layout_height="wrap_content"
+                android:textColor="#40bfff"
+                android:textStyle="italic"
+
+                />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

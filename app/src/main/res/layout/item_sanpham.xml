@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/edt_login">
+
+
+        <ImageView
+            android:id="@+id/ivHinh"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@mipmap/image1" />
+
+        <TextView
+            android:id="@+id/txtphantramkm"
+            android:layout_width="40dp"
+            android:layout_height="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="6dp"
+            android:background="@drawable/botron_gia_khuyen_mai"
+            android:gravity="center"
+            android:text="haha"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/txtTen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/ivHinh"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="0dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtGia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTen"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:text="1000000"
+            android:textColor="#40BFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtGiacu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtGia"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="8dp"
+            android:text="11111111"
+            android:textColor="#E91E63"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@id/txtGia"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDatHang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#E64A19"
+                android:text="Đặt hàng"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnthemgiohang"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/teal_700"
+                android:text="giỏ hàng"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
